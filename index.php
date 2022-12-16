@@ -1,0 +1,3 @@
+<?php
+// Ruta de web
+?>
