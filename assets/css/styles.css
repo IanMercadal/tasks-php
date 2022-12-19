@@ -35,6 +35,11 @@ main {
     font-size: 18px;
     color: var(--light-color);
 }
+.error {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: red;
+}
 
 /* Titulos */ 
 .section-title {
@@ -70,6 +75,9 @@ main {
 .inputBox label{
     color: var(--white);
     font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 .input-content {
     display: flex;
@@ -77,12 +85,12 @@ main {
     gap: 0.4rem;
 }
 form .inputBox .input-content input[type="email"], input[type="password"] {
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
 }
 form .inputBox .input-content input[type="email"]::placeholder, input[type="password"]::placeholder {
     color: var(--white);
-} 
+}
 
 /* BOTONES */
 
