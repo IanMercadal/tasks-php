@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:wght@200;400;600&family=Noto+Serif+Khojki:wght@500;600&family=Old+Standard+TT:wght@400;700&family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;400;500&family=Roboto:wght@100;400;700&family=Staatliches&display=swap');
+
+:root{
+    --white:#fff;
+    --blue:#022E66;
+    --light-color:#6B99C3;
+    --light-background-color:#F2F2F2;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;border: none;
+    /* text-transform: capitalize; */
+    transition: all 0.2s linear;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section-redirect {
+    font-size: 18px;
+    color: var(--light-color);
+}
+
+/* Titulos */ 
+.section-title {
+    font-size: 28px;
+    color: var(--blue);
+    margin-bottom: 6px;
+}
+.section-description {
+    font-size: 12px;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+/* FORM */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.inputBox {
+    background-color: var(--blue);
+    border-radius: 10px;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inputBox > * {
+    margin-left: 10px;
+}
+.inputBox label{
+    color: var(--white);
+    font-size: 16px;
+}
+.input-content {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+}
+form .inputBox .input-content input[type="email"], input[type="password"] {
+    background-color: var(--blue);
+    color: var(--white);
+}
+form .inputBox .input-content input[type="email"]::placeholder, input[type="password"]::placeholder {
+    color: var(--white);
+} 
+
+/* BOTONES */
+
+.btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.btn-primary {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+}
