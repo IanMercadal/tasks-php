@@ -7,11 +7,11 @@ include "./includes/header.php";
     <div class="task-options">
         <h2 class="section-title">task name</h2>
         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#022E66" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#022E66" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#022E66" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#022E66" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <circle cx="12" cy="12" r="9" />
                 <line x1="9" y1="12" x2="15" y2="12" />
@@ -25,23 +25,26 @@ include "./includes/header.php";
             <div class="task-stats">
                 <h3>Statistics</h3>
                 <div class="stats">
-                    <div class="task-stat">
-                        <p>State</p>
-                        <div class="task-state to-do">
-                            <p>to do</p>
-                        </div>
+                    <div id="stat-state" class="task-stat">
+                        <p>State: 
+                        <span>
+                            <div class="task-state to-do">
+                                <p>to do</p>
+                            </div>
+                        </span>
+                        </p>
                     </div>
                     <div class="task-stat">
-                        <p>Total Hours</p>
+                        <p>Total Hours: <span>24</span></p>
                     </div>
                     <div class="task-stat">
-                        <p>Initial Date:</p>
+                        <p>Initial Date: <span>12/12/2022</span></p>
                     </div>
                     <div class="task-stat">
-                        <p>Expected Hours:</p>
+                        <p>Expected Hours: <span>24</span></p>
                     </div>
                     <div class="task-stat">
-                        <p>End Date:</p>
+                        <p>End Date: <span>24/12/2022</span></p>
                     </div>
                 </div>
             </div>

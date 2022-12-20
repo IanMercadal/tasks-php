@@ -35,15 +35,14 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
     height: 100vh;
 }
-
 h3 {
     color: var(--blue);
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .section-redirect {
@@ -68,6 +67,8 @@ h3 {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
 }
 .static-header {
     display: flex;
@@ -84,7 +85,8 @@ h3 {
 
 /* Titulos */ 
 .section-title {
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: normal;
     color: var(--blue);
     margin-bottom: 6px;
     text-transform: capitalize;
@@ -118,6 +120,7 @@ input.searcher {
 /* TASK */
 .filtro {
     width: 100%;
+    margin-bottom: 1rem;
 }
 .task {
     display: flex;
@@ -162,10 +165,27 @@ input.searcher {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 .task-container {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+}
+.task-container h3 {
+    margin-bottom: 1rem;
+}
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+#stat-state {
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: row;
 }
 .task-employee {
     display: flex;
@@ -173,21 +193,21 @@ input.searcher {
     align-items: center;
 }
 .employees {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 1rem;
 }
-
+.task-description p{
+    font-size: 18px;
+}
 .pictures {
-    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 1rem;
-    justify-items: center;
+    justify-items: start;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .done {
@@ -272,8 +292,15 @@ form .inputBox .input-content input[type="email"]::placeholder, input[type="pass
     border-radius: 50%;
     display: inline-block;
 }
+.employees .dot {
+    height: 70px;
+    width: 70px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: inline-block;
+}
 .cuadrado {
-    width: 50px; 
-    height: 50px; 
+    width: 60px; 
+    height: 60px; 
     background-color: #bbb;
 }
