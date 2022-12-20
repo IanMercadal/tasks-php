@@ -4,7 +4,7 @@ include "./includes/header.php";
 
 <main class="main-content">
 
-    <div class="filtrador">
+    <div class="filtro">
         <h2 class="section-title">your tasks</h2>
         <div class="searcher">
             <form>
