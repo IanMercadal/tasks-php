@@ -30,7 +30,15 @@ main {
     justify-content: center;
     height: 100vh;
 }
-
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 100vh;
+}
 .section-redirect {
     font-size: 18px;
     color: var(--light-color);
@@ -40,18 +48,119 @@ main {
     margin-bottom: 5px;
     color: red;
 }
+.paginacion {
+    margin-top: 1rem;
+}
+
+/* HEADER */
+
+.header {
+    color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.static-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
+.dynamic-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
 
 /* Titulos */ 
 .section-title {
     font-size: 28px;
     color: var(--blue);
     margin-bottom: 6px;
+    text-transform: capitalize;
 }
 .section-description {
     font-size: 12px;
     color: var(--blue);
     margin-bottom: 10px;
 }
+/* SEARCHER */
+input.searcher {
+    border-radius: 10px;
+}
+.searcher-div {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+    gap: 1rem;
+}
+/* TASKS */
+.tasks-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/* TASK */
+.filtrador {
+    width: 100%;
+}
+.task {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--light-background-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+.task-name-list {
+    color: var(--blue);
+    font-size: 16px;
+}
+.task-date-list {
+    color: var(--blue);
+    font-size: 16px !important;
+}
+.task > * {
+    margin-left: 1rem;
+    margin-bottom: 0.4rem;
+}
+.task p {
+    font-size: 14px;
+}
+.task-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.4rem;
+}
+.task-state {
+    color: var(--white);
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.2rem;
+    border-radius: 10px;
+}
+.done {
+    background-color: green;
+}
+.to-do {
+    background-color: red;
+}
+.doing {
+    background-color: orange;
+}
+
+
 /* FORM */
 
 .form {
@@ -84,11 +193,11 @@ main {
     flex-direction: row;
     gap: 0.4rem;
 }
-form .inputBox .input-content input[type="email"], input[type="password"] {
+form .inputBox .input-content input[type="email"], input[type="password"], input.searcher {
     background-color: var(--blue) !important;
     color: var(--white) !important;
 }
-form .inputBox .input-content input[type="email"]::placeholder, input[type="password"]::placeholder {
+form .inputBox .input-content input[type="email"]::placeholder, input[type="password"]::placeholder, input.searcher::placeholder {
     color: var(--white);
 }
 
@@ -105,4 +214,21 @@ form .inputBox .input-content input[type="email"]::placeholder, input[type="pass
     color: var(--white);
     font-size: 18px;
     font-weight: bold;
+}
+.btn-paginacion {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+/* BORRAR */
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
 }
