@@ -1,5 +1,6 @@
 <?php
 include "./includes/header.php";
+// require "./consultas.php";
 ?>
 
 <main class="main-content">
@@ -22,71 +23,10 @@ include "./includes/header.php";
 
     <section>
         <div class="tasks-section">
-            <div class="task">
-                <div class="task-header">
-                    <h4 class="task-name-list">Task name</h4>
-                    <div class="task-state to-do">
-                        <p>to do</p>
-                    </div>
-                    <p class="task-date-list">12/12/2022</p>
-                </div>
-                <div class="task-employees">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <p class="task-description-list">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nam diam ligula, posuere rutrum
-                quam sit amet, imperdiet elementum leo.</p>
-            </div>
-            <div class="task">
-                <div class="task-header">
-                    <h4 class="task-name-list">Task name</h4>
-                    <div class="task-state doing">
-                        <p>doing</p>
-                    </div>
-                    <p class="task-date-list">12/12/2022</p>
-                </div>
-                <div class="task-employees">
-                    <span class="dot"></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nam diam ligula, posuere rutrum
-                quam sit amet, imperdiet elementum leo.</p>
-            </div>
-            <div class="task">
-                <div class="task-header">
-                    <h4 class="task-name-list">Task name</h4>
-                    <div class="task-state to-do">
-                        <p>to do</p>
-                    </div>
-                    <p class="task-date-list">12/12/2022</p>
-                </div>
-                <div class="task-employees">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nam diam ligula, posuere rutrum
-                quam sit amet, imperdiet elementum leo.</p>
-            </div>
-            <div class="task">
-                <div class="task-header">
-                    <h4 class="task-name-list">Task name</h4>
-                    <div class="task-state done">
-                        <p>done</p>
-                    </div>
-                    <p class="task-date-list">12/12/2022</p>
-                </div>
-                <div class="task-employees">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nam diam ligula, posuere rutrum
-                quam sit amet, imperdiet elementum leo.</p>
-            </div>
+
+        <?php
+            echo mostrarTasks();
+        ?>
         </div>
 
         <div class="paginacion">
