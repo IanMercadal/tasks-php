@@ -286,6 +286,39 @@ form .inputBox .input-content input[type="email"]::placeholder, input[type="pass
     color: var(--white);
 }
 
+#task-form {
+    background-color: var(--light-background-color);
+}
+.form-group > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.task-form-parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    width: 100%;
+}
+.form-input, .form-group textarea {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    resize: none;
+    height: 200px;
+}
 /* BOTONES */
 
 .btn {

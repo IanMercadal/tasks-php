@@ -13,28 +13,36 @@ include "./includes/header.php";
         </div>
     </div>
 
-    <section>
-        <h3>Form</h3>
-        <form class="form">
-            <div class="inputBox">
-                <label>Hours</label>
-                <input type="time">
-            </div>
+    <section class="task-form-parent">
+        <form id="task-form" class="form">
+            <h3>Form</h3>
 
-            <div class="inputBox">
-                <label>Fecha</label>
-                <input type="date">
-            </div>
+            <div class="form-group">
+                <div class="input-box">
+                    <label>Hours</label>
+                    <input class="form-input" type="time">
+                </div>
 
-            <div class="inputBox">
-                <label>File</label>
-                <input type="file">
-            </div>
+                <div class="input-box">
+                    <label>Fecha</label>
+                    <input class="form-input" type="date">
+                </div>
 
-            <div class="inputBox">
-                <label>Work</label>
-                <textarea>
-                </textarea>
+                <div class="input-box">
+                    <label>
+                        File
+                        <br>
+                        <ul>
+                            <li>Only pdf, jpg and png</li>
+                        </ul>
+                    </label>
+                    <input class="form-input" type="file">
+                </div>
+
+                <div class="input-box">
+                    <label>Work</label>
+                    <textarea></textarea>
+                </div>
             </div>
 
             <button class="btn btn-primary" type="submit" name="login">Submit</button>
