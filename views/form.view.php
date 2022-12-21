@@ -14,7 +14,7 @@ include "./includes/header.php";
     </div>
 
     <section class="task-form-parent">
-        <form id="task-form" class="form">
+        <form id="task-form" class="form" method="post" action="#">
             <h3>Form</h3>
 
             <div class="form-group">
@@ -45,7 +45,7 @@ include "./includes/header.php";
                 </div>
             </div>
 
-            <button class="btn btn-primary" type="submit" name="login">Submit</button>
+            <button class="btn btn-primary" type="submit" name="form">Submit</button>
         </form>
     </section>
 </main>
