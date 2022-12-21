@@ -35,7 +35,7 @@ include "./includes/header.php";
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur
+                <p class="task-description-list">Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Nam diam ligula, posuere rutrum
                 quam sit amet, imperdiet elementum leo.</p>
             </div>
@@ -48,8 +48,6 @@ include "./includes/header.php";
                     <p class="task-date-list">12/12/2022</p>
                 </div>
                 <div class="task-employees">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur
@@ -65,7 +63,6 @@ include "./includes/header.php";
                     <p class="task-date-list">12/12/2022</p>
                 </div>
                 <div class="task-employees">
-                    <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>

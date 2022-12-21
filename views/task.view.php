@@ -20,13 +20,13 @@ include "./includes/header.php";
         </div>
     </div>
 
-    <section class="task">
+    <section class="task-main">
         <div class="task-container">
             <div class="task-stats">
                 <h3>Statistics</h3>
                 <div class="stats">
                     <div id="stat-state" class="task-stat">
-                        <p>State: 
+                        <p><b>State:</b> 
                         <span>
                             <div class="task-state to-do">
                                 <p>to do</p>
@@ -35,16 +35,16 @@ include "./includes/header.php";
                         </p>
                     </div>
                     <div class="task-stat">
-                        <p>Total Hours: <span>24</span></p>
+                        <p><b>Total Hours:</b> <span>24</span></p>
                     </div>
                     <div class="task-stat">
-                        <p>Initial Date: <span>12/12/2022</span></p>
+                        <p><b>Initial Date:</b> <span>12/12/2022</span></p>
                     </div>
                     <div class="task-stat">
-                        <p>Expected Hours: <span>24</span></p>
+                        <p><b>Expected Hours:</b> <span>24</span></p>
                     </div>
                     <div class="task-stat">
-                        <p>End Date: <span>24/12/2022</span></p>
+                        <p><b>End Date:</b> <span>24/12/2022</span></p>
                     </div>
                 </div>
             </div>
@@ -54,22 +54,22 @@ include "./includes/header.php";
                 <div class="employees">
                     <div class="task-employee">
                         <div class="dot"></div>
-                        <p>Employee</p>
+                        <p><b>Employees</b></p>
                     </div>
                     <div class="task-employee">
                         <div class="dot"></div>
-                        <p>Employee</p>
+                        <p><b>Employees</b></p>
                     </div>
                     <div class="task-employee">
                         <div class="dot"></div>
-                        <p>Employee</p>
+                        <p><b>Employees</b></p>
                     </div>
                 </div>
             </div>
 
             <div class="task-description">
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet,
+                <p class="task-text">Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Nam
                 diam ligula, posuere rutrum quam
                 sit amet, imperdiet elementum leo.</p>

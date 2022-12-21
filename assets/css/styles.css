@@ -37,7 +37,9 @@ main {
     justify-content: flex-start;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
-    height: 100vh;
+    height: 90vh;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
 }
 h3 {
     color: var(--blue);
@@ -115,7 +117,7 @@ input.searcher {
 .tasks-section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 /* TASK */
 .filtro {
@@ -123,6 +125,15 @@ input.searcher {
     margin-bottom: 1rem;
 }
 .task {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--light-background-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    height: 146px;
+}
+.task-main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -138,11 +149,11 @@ input.searcher {
     color: var(--blue);
     font-size: 16px !important;
 }
-.task > * {
+.task > *, .task-main > * {
     margin-left: 1rem;
     margin-bottom: 0.4rem;
 }
-.task p {
+.task p, .task-main p {
     font-size: 14px;
 }
 .task-header {
@@ -150,7 +161,9 @@ input.searcher {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 1.4rem;
+    gap: 3.4rem;
+    margin-top: 1rem;
+    width: 100%;
 }
 .task-state {
     color: var(--white);
@@ -181,6 +194,7 @@ input.searcher {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
+    /* margin-left: 1rem; */
 }
 #stat-state {
     display: flex;
@@ -191,33 +205,44 @@ input.searcher {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
 }
 .employees {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
+    margin-right: 1rem;
 }
-.task-description p{
-    font-size: 18px;
+.task-description-list {
+    margin-bottom: 1.2rem;
+}
+.task-text {
+    font-size: 18px !important;
+    margin-right: 1rem;
 }
 .pictures {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 1rem;
-    justify-items: start;
+    justify-items: center;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .done {
     background-color: green;
+    opacity: 60%;
 }
 .to-do {
     background-color: red;
+    opacity: 60%;
 }
 .doing {
     background-color: orange;
+    opacity: 60%;
 }
 
 
@@ -293,14 +318,14 @@ form .inputBox .input-content input[type="email"]::placeholder, input[type="pass
     display: inline-block;
 }
 .employees .dot {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     background-color: var(--light-color);
     border-radius: 50%;
     display: inline-block;
 }
 .cuadrado {
-    width: 60px; 
-    height: 60px; 
+    width: 100%; 
+    height: 80px;
     background-color: #bbb;
 }
